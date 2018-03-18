@@ -107,5 +107,8 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+# vim
+*.swp
+
 
 # End of https://www.gitignore.io/api/python,jupyternotebook
