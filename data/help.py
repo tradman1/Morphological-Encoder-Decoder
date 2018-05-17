@@ -26,4 +26,4 @@ def create_result_file(gold_file, guess_file):
 
 
 if __name__ == "__main__":
-    create_result_file("german-task2-test", "german-task2-test-results")
+    create_result_file("german-task2-test", "german-task2-test-results2")

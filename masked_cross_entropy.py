@@ -46,6 +46,8 @@ def masked_cross_entropy(logits, target, length):
     # target_flat: (batch * max_len, 1)
     #target_flat = target.view(-1, 1)
     target_flat = Variable(target.view(-1, 1))
+    if USE_CUDA:
+        target_flat = target_flat.cuda()
     # losses_flat: (batch * max_len, 1)
     losses_flat = -torch.gather(log_probs_flat, dim=1, index=target_flat)
     # losses: (batch, max_len)
