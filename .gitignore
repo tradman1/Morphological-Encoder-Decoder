@@ -110,5 +110,8 @@ venv.bak/
 # vim
 *.swp
 
+checkpoints/
+data/*
+
 
 # End of https://www.gitignore.io/api/python,jupyternotebook

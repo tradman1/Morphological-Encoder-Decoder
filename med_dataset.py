@@ -42,31 +42,3 @@ def med_collate_fn(data):
 
     return src_seqs, src_lens, trg_seqs, trg_lens
 
-
-def main():
-    ds = MEDDataset("data/german-task2-train")
-    train_iter = DataLoader(dataset=ds,
-                            batch_size=3,
-                            shuffle=True,
-                            num_workers=4,
-                            collate_fn=med_collate_fn)
-
-    i = 0
-    for src_seqs, src_lens, trg_seqs, trg_lens in train_iter:
-        if i == 0:
-            print("src seqs ==================================")
-            print(src_seqs)
-            print("src lens ==================================")
-            print(src_lens)
-            print("trg seqs ==================================")
-            print(trg_seqs)
-            print("trg_lens ==================================")
-            print(trg_lens)
-            print("".join([ds.in_vocab[0][x] for x in src_seqs[:,0]]))
-            print("".join([ds.out_vocab[0][x] for x in trg_seqs[:,0]]))
-        else: break
-        i += 1
-    print(len(ds.out_vocab[0]))
-
-if __name__ == "__main__":
-    main()
