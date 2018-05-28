@@ -1,14 +1,13 @@
+# repo-specific stuff
+pred.txt
+multi-bleu.perl
+*.pt
+\#*#
+.idea
+*.sublime-*
+.DS_Store
+data/
 
-# Created by https://www.gitignore.io/api/python,jupyternotebook
-
-### JupyterNotebook ###
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
-
-# Remove previous ipynb_checkpoints
-#   git rm -r .ipynb_checkpoints/
-#
-### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -51,7 +50,6 @@ htmlcov/
 .coverage
 .coverage.*
 .cache
-.pytest_cache/
 nosetests.xml
 coverage.xml
 *.cover
@@ -60,6 +58,10 @@ coverage.xml
 # Translations
 *.mo
 *.pot
+
+# Django stuff:
+*.log
+local_settings.py
 
 # Flask stuff:
 instance/
@@ -75,12 +77,13 @@ docs/_build/
 target/
 
 # Jupyter Notebook
+.ipynb_checkpoints
 
 # pyenv
 .python-version
 
 # celery beat schedule file
-celerybeat-schedule.*
+celerybeat-schedule
 
 # SageMath parsed files
 *.sage.py
@@ -91,8 +94,6 @@ celerybeat-schedule.*
 env/
 venv/
 ENV/
-env.bak/
-venv.bak/
 
 # Spyder project settings
 .spyderproject
@@ -107,11 +108,9 @@ venv.bak/
 # mypy
 .mypy_cache/
 
-# vim
-*.swp
+# Tensorboard
+runs/
 
-checkpoints/
-data/*
-
-
-# End of https://www.gitignore.io/api/python,jupyternotebook
+models/*
+available_models/*
+.ipynb_checkpoints/*
