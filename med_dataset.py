@@ -1,7 +1,7 @@
 import numpy as np
 import torch
 from torch.utils.data import Dataset, DataLoader
-from utils2 import *
+from utils import *
 
 class MEDDataset(Dataset):
 
