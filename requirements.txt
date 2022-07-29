@@ -27,7 +27,7 @@ jupyter-core==4.4.0
 Keras==2.1.5
 Markdown==2.6.11
 MarkupSafe==1.0
-mistune==0.8.3
+mistune==2.0.3
 nb-anacondacloud==1.4.0
 nb-conda==2.2.1
 nb-conda-kernels==2.1.0
