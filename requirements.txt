@@ -3,7 +3,7 @@ anaconda-client==1.6.12
 asn1crypto==0.24.0
 astor==0.6.2
 bleach==3.1.4
-certifi==2018.1.18
+certifi==2022.12.7
 cffi==1.11.5
 chardet==3.0.4
 clyent==1.2.2
